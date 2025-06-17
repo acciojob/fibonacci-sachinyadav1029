@@ -15,7 +15,7 @@ function getFibonacci() {
     const inp = document.getElementById("input");
 
     const num = parseInt(inp.value); // Convert string to number
-    if (!isNaN(num)) {
+    if (!isNaN(num) && num >= 0 && num <= 50) {
         p.textContent = fibonacci(num);
     } else {
         p.textContent = "Please enter a valid number.";
